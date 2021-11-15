@@ -34,7 +34,15 @@ public class Application {
     }
 
     public void addPerson() {
+        ui.printToUser("Enter firstname: ");
+        String firstName = ui.getString();
 
+        ui.printToUser("Enter lastname: ");
+        String lastName = ui.getString();
+
+        people.add(new Person(firstName, lastName));
+
+        ui.printToUser(people.get(people.size()-1) + " was added");
     }
 
     public void deletePerson() {
