@@ -1,7 +1,7 @@
 public class Person implements Comparable{
 
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -15,6 +15,7 @@ public class Person implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        Person p = (Person) o;
+        return this.lastName.compareTo(p.lastName);
     }
 }
