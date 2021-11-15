@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Application {
 
@@ -24,6 +25,9 @@ public class Application {
     }
 
     private void printAllPeople() {
+        // Sort list of people
+        people.sort(Person::compareTo);
+
         StringBuilder sb = new StringBuilder("The list of people: \n");
 
         for (int i = 0; i < people.size(); i++) {
