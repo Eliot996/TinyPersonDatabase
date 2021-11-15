@@ -26,7 +26,8 @@ public class UserInterface {
     }
 
     public String getString(){
-            return input.nextLine();
+        input.next();
+        return input.nextLine();
     }
 
     public void printToUser(String string) {
