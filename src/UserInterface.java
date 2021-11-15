@@ -11,14 +11,16 @@ public class UserInterface {
         System.out.println("""
                 1. Print people in list
                 2. Add person to list
-                3. delete person from list
+                3. Delete person from list
                 0. Exit program
                 """);
     }
 
     public int getInt(){
         if (input.hasNextInt()){
-            return input.nextInt();
+            int i = input.nextInt();
+            input.nextLine();
+            return i;
         }else{
             System.out.print("Please enter an int:");
             return getInt();
@@ -26,7 +28,6 @@ public class UserInterface {
     }
 
     public String getString(){
-        input.next();
         return input.nextLine();
     }
 
