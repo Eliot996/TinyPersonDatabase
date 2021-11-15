@@ -47,6 +47,15 @@ public class Application {
 
     public void deletePerson() {
 
+        printAllPeople();
+
+        ui.printToUser("Please enter the number of the person to remove: ");
+
+        int choice = ui.getInt();
+
+        people.remove(choice);
+
+        ui.printToUser("The person on index " + choice + " was removed");
     }
 
     public static void main(String[] args) {
