@@ -25,6 +25,10 @@ public class UserInterface {
         }
     }
 
+    public String getString(){
+            return input.nextLine();
+    }
+
     public void printToUser(String string) {
         System.out.println(string);
     }
