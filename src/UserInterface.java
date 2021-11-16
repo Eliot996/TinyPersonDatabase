@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class UserInterface {
     Scanner input = new Scanner(System.in);
 
-    // print hello message to the user
+    // print hello message
     public void hello() {
         System.out.println("Hello, in this program you can create and modify a list of persons");
     }
