@@ -10,7 +10,7 @@ public class Person implements Comparable{
 
     @Override
     public String toString() {
-        return lastName + ' ' + firstName;
+        return lastName + ", " + firstName;
     }
 
     @Override
